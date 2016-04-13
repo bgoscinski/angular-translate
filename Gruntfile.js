@@ -552,10 +552,10 @@ module.exports = function (grunt) {
       'messageformat_interpolation': {
         options: {
           deps: {
-            'default': ['MessageFormat'],
-            amd: ['messageformat'],
-            cjs: ['messageformat'],
-            global: ['MessageFormat']
+            'default': ['MessageFormat', 'angular', 'angular-translate'],
+            amd: ['messageformat', 'angular', 'angular-translate'],
+            cjs: ['messageformat', 'angular', 'angular-translate'],
+            global: ['MessageFormat', 'angular']
           }
         },
         src: '<%= concat.messageformat_interpolation.dest %>',
